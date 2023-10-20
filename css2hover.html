@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css nav hover page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+
+        }
+
+        ul li {
+            font-size: 20px;
+            display: block;
+        }
+
+        ul li a {
+            background-color: yellow;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+
+        }
+
+        ul li a:hover {
+            background-color: purple;
+
+        }
+
+        ul ul {
+            display: none;
+        }
+
+        ul  ul li ul {
+          margin-right: -110px;
+          /* margin-bottom: 20px; */
+          float: left;
+        }
+
+      
+        ul li:hover>ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Gallary</a>
+            <ul>
+                <li><a href="">Video Gallary</a>
+                </li>
+                <li><a href="">Photo Gallary</a>
+                    <ul>
+                        <li><a href="">mp3 Gallary</a></li>
+                        <li><a href="">mp4 Gallary</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </li>
+        <li><a href="">Service</a></li>
+    </ul>
+</body>
+
+</html>
